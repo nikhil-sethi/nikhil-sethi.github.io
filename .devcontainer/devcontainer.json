@@ -1,0 +1,15 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "website.devcontainer",
+	"dockerFile": "Dockerfile",
+    "forwardPorts": [4000, 35729],    
+    "runArgs": ["--name","website.devcontainer"],
+    // "postStartCommand": "bundle install && bundle exec jekyll serve --baseurl='' --livereload --force_polling"
+
+    "customizations": {
+        "vscode": {"extensions": [
+            "mhutchie.git-graph"
+        ]}
+    }
+
+}
