@@ -7,3 +7,7 @@ RUN gem update bundler
 
 # Install Jekyll
 RUN gem install bundler jekyll
+
+# Add webricks
+# See https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+RUN bundle add webricks
