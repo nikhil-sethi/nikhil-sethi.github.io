@@ -14,10 +14,10 @@ categories: reinforcement-learning deep-learning
     <tbody>
         <tr>
             <td style="text-align: center;"><a
-                    href="media/bird_flocking.png/"
+                    href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/bird_flocking.png"
                     style="margin-left: auto; margin-right: auto;"><img alt="Birds flocking in a V-formation"
                         data-original-height="565" data-original-width="849" height="448"
-                        src="media/bird_flocking.png"
+                        src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/bird_flocking.png"
                         title="Birds flocking in a V-formation" width="674" /></a></td>
         </tr>
         <tr>
