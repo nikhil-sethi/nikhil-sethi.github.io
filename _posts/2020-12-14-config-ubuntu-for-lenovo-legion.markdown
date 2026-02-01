@@ -4,16 +4,15 @@ title: "Configuring Ubuntu 20.04 for lenovo Legion 5 AMD/Nvdia"
 date: 2020-12-14
 categories: ubuntu 20.04 pain Lenovo legion 5
 ---
-![alt text](/_posts/media/lenovo_legion.png)
 
 <p>&nbsp;Changed my laptop recently. Got the beautiful Lenovo Legion 5 AMD Ryzen 7 4800h with 1660ti. It's a beast no
     matter what you throw at it.&nbsp;</p>
 <p></p>
 <div class="separator" style="clear: both; text-align: center;"><a
-        href="./media/lenovo_legion.png"
+        href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/lenovo_legion.png"
         style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1152"
             data-original-width="2048" height="401"
-            src="./media/lenovo_legion.png"
+            src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/lenovo_legion.png"
             width="714" /></a></div>
 <p></p>
 <p>My primary purpose was not gaming but to run extensive simulations on it and use it as a short rig for network
