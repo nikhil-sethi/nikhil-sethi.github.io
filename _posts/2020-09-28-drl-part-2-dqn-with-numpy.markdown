@@ -27,10 +27,10 @@ repo for newbies like me to learn easier.<p></p>
     future.</p>
 <p></p>
 <div class="separator" style="clear: both; text-align: center;"><a
-        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz5WiFfNA45M6Denjusjs4JtN1UPrnd87B8-G0LIxfiw6f-SWFg_yf1PKjUz2tvexhm6bTTdjxmn5PIDwQi3dwZCyVNjSabCChOgdnOwp6HfBrM18wT55yiOvq2BTTItgkqwaHhRwhUraa/"
+        href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/bellman_update.png"
         style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="163" data-original-width="800"
             height="111"
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz5WiFfNA45M6Denjusjs4JtN1UPrnd87B8-G0LIxfiw6f-SWFg_yf1PKjUz2tvexhm6bTTdjxmn5PIDwQi3dwZCyVNjSabCChOgdnOwp6HfBrM18wT55yiOvq2BTTItgkqwaHhRwhUraa/w546-h111/image.png"
+            src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/bellman_update.png"
             width="546" /></a></div>Next up was the Deep Q network implementation for the cartpole environment. I always
 start off with writing pseudocode and I came up with the following for the same. (I haven't removed any mistakes
 purposely to let the reader know what I was doing wrong initially). I will add all the code as I did the first time and
@@ -246,10 +246,10 @@ current_state = new_state</pre>
     storing stated in memory as rows where each of the columns are shown below</p>
 <p></p>
 <div class="separator" style="clear: both; text-align: center;"><a
-        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK8FRUhYAnwY8-_MIjFUefPHbivjgHMLAqDsvCxd-F-TltdoIatapUwnRmm3EZASY_q_jAfXtRdI3S-Q6-540g-PE3mM63ZfoI6qNnBU047pjaNzB1epGBai9537bGgq-JJjEp0hMqciWI/s945/Screenshot+2020-09-28+170007.png"
+        href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/train_state.png"
         style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="346"
             data-original-width="945" height="244"
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK8FRUhYAnwY8-_MIjFUefPHbivjgHMLAqDsvCxd-F-TltdoIatapUwnRmm3EZASY_q_jAfXtRdI3S-Q6-540g-PE3mM63ZfoI6qNnBU047pjaNzB1epGBai9537bGgq-JJjEp0hMqciWI/w667-h244/Screenshot+2020-09-28+170007.png"
+            src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/train_state.png"
             width="667" /></a></div>
 <div class="separator" style="clear: both; text-align: left;"><br /></div>
 <div class="separator" style="clear: both; text-align: left;">The tough part was getting X. As I was storing sub arrays
@@ -409,10 +409,10 @@ if int(episode % 10)==0:  # change target thetas every 10 episodes
     </ol>The first two tests were successful. I got a similar intermediate state as the original code as shown below:<p>
     </p>
     <div class="separator" style="clear: both; text-align: center;"><a
-            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjB8hBVmB0MEU4p0oi9yt1Aapjg4iGYhu0NPnOGzrUalhTDgtKHSn1DmtqcWsoe35LCVAv9-gp_VvkYjdRRDw1UMYIBaK6nnKmf7UiQ3pfyNwKEy5WMIBbo85t9-5h-xeTCWNFIlPA9vgl9/s545/Screenshot+from+2020-09-05+14-02-58.png"
+            href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/pendulum_state_change.png"
             style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="289"
                 data-original-width="545" height="236"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjB8hBVmB0MEU4p0oi9yt1Aapjg4iGYhu0NPnOGzrUalhTDgtKHSn1DmtqcWsoe35LCVAv9-gp_VvkYjdRRDw1UMYIBaK6nnKmf7UiQ3pfyNwKEy5WMIBbo85t9-5h-xeTCWNFIlPA9vgl9/w444-h236/Screenshot+from+2020-09-05+14-02-58.png"
+                src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/pendulum_state_change.png"
                 width="444" /></a></div><br />
     <p>The third wasn't right. The values for my epsilon were not decaying as fast as they should. Found the solution
         for this relatively quickly. Epsilon needs to be decayed with respect to total cumulative time steps. I was
@@ -461,18 +461,18 @@ theta3 -= step_size[2]</pre>
     <p>At this point I ran the learning algorithm. It was admittedly slow but I just wanted to see if it learns anything
         at all. The following graph was plotted on running:</p>
     <div class="separator" style="clear: both; text-align: center;"><a
-            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJQXc-rgJkr1D4OtoOz8XMDT0IWDWR0jCb33u7sz_OjBq4a2QIpUzmr0QHhaBdu49Nrp_KOltnREBjwaKihX66hprxX3TSSfOtuzXkEs84zFcw1mOw1ne0KnjcX7juYxx6MKzdf51nUhTY/s548/Screenshot+from+2020-09-14+02-03-36.png"
+            href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/bad_train_graph.png"
             style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="431"
                 data-original-width="548" height="327"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJQXc-rgJkr1D4OtoOz8XMDT0IWDWR0jCb33u7sz_OjBq4a2QIpUzmr0QHhaBdu49Nrp_KOltnREBjwaKihX66hprxX3TSSfOtuzXkEs84zFcw1mOw1ne0KnjcX7juYxx6MKzdf51nUhTY/w415-h327/Screenshot+from+2020-09-14+02-03-36.png"
+                src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/bad_train_graph.png"
                 width="415" /></a></div><br />
     <p>That's just sad.&nbsp;</p>
     <p>For comparison, the original algo's graph looks like:</p>
     <div class="separator" style="clear: both; text-align: center;"><a
-            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3ra2eD_EieqYZAey2DoXV9U9eIgw-Q3zR6PWFG2BADGHbGaNZgPRQkt6D45WfVCDtAevHFRSSFlyAAnQx3Zc31nUoh5pr8EHOSQudaXj5eD0pce5p_NOGV7LnSAtFAzmysfiYNHeUwkfC/s567/Screenshot+from+2020-09-11+02-03-44.png"
+            href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/og_train_graph.png"
             style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="435"
                 data-original-width="567" height="307"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3ra2eD_EieqYZAey2DoXV9U9eIgw-Q3zR6PWFG2BADGHbGaNZgPRQkt6D45WfVCDtAevHFRSSFlyAAnQx3Zc31nUoh5pr8EHOSQudaXj5eD0pce5p_NOGV7LnSAtFAzmysfiYNHeUwkfC/w400-h307/Screenshot+from+2020-09-11+02-03-44.png"
+                src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/og_train_graph.png"
                 width="400" /></a></div>
     <div><br /></div>What could have gone wrong? A lot as it turns out.<br />
     <p>To find these mistakes I merged my own and the original implementation. Sharing the variable space made it easier
@@ -488,10 +488,10 @@ theta3 -= step_size[2]</pre>
         each time step.</p>
     <p>This is the graph I got after running it now:</p>
     <div class="separator" style="clear: both; text-align: center;"><a
-            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYY_8aBfHtOL4EGvpAqWDVTyDyN4_v9EDgyR3skD9gBfGj8LRrxYtra7fpadUtuKo5_i3P1Yy6h5f2GSML4B2vl_c5hWPLHaVhkw8RPia4loJhcTj037dqcOsrENUfnfWUKr_2hR2ob7Hr/s559/ezgif.com-gif-maker.gif"
+            href="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/train_progress.gif"
             style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="421"
                 data-original-width="559" height="324"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYY_8aBfHtOL4EGvpAqWDVTyDyN4_v9EDgyR3skD9gBfGj8LRrxYtra7fpadUtuKo5_i3P1Yy6h5f2GSML4B2vl_c5hWPLHaVhkw8RPia4loJhcTj037dqcOsrENUfnfWUKr_2hR2ob7Hr/w430-h324/ezgif.com-gif-maker.gif"
+                src="https://raw.githubusercontent.com/nikhil-sethi/nikhil-sethi.github.io/refs/heads/main/_posts/media/train_progress.gif"
                 width="430" /></a></div><br />
     <p>yay.</p>
     <p>The agent learns at par or better than the original code but its much slower of course. Speed was not a target
