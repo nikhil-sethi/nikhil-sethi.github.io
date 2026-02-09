@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "(Re)Configuring Raspberrypi zero for networking"
+title:  "I AM BACC: (Re)Configuring Raspberrypi zero for networking"
 date:   2026-01-09
 categories: networking raspberry-pi 
 ---
