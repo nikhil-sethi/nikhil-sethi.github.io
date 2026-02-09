@@ -4,10 +4,10 @@ title: Blog
 permalink: /blog/
 ---
 
-I blog under two conditions:
+I blog when:
 
-- When I am extremely motivated about something
-- When I feel guilty that i haven't blogged in a while. 
+- I am extremely motivated about something
+- I feel guilty that i haven't blogged in a while. 
 
 If you don't believe me, checkout the wild inconsistency of the [timeline](#timeline). But also check out the content. It is (mostly) nice.
 

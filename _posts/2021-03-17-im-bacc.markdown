@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "(Re)Configuring Raspberrypi zero for networking"
+date:   2026-01-09
+categories: networking raspberry-pi 
+---
+
+This blog is an update to this older one where I setup the raspberry pis for networking etc.
+
+Update: 09/02/26
+
+A bunch of things changed over time (includin me) and I opened up the infamous raspi zero w and started to play with it again.
+
+I decided this time was going to be different.
+
+IT WAS NOT.
+
+Raspberry pi is still a pain, but oh well, I like wasting my evenings debugging ethernet connections and setting up static ips on embedded devices. Problem?
+
+Ok. enough sarcasm. down to business.
+
+---
+
+I tried plugging in the old pi but couldn't connect to either wifi or via usb ethernet. So I decided to format it with a new image via `rpi-imager`. I downloaded it from [here](https://www.raspberrypi.com/software/) and selected the **32 bit image**. Of course it's in bold because I first selected the 64 bit thinking that I had the zero 2 W (yes, it's been that long). Make sure you setup WiFi already here, so you have a backup interface for logging in the pi if nothing works.
+
+After that the usual shebang for USB ethernet
+
+1. Add `dtoverlay=dwc2` at the end of `config.txt` in the boot partition. Make sure this is at the end of the file under the [all] section. Otherwise it won't work.
+
+2. Add `modules-load=dwc2,g_ether ` after `rootwait` in `cmdline.txt`.
+
+Now connect the pi with the sd card and connect via Wifi. To find the ip adress that the pi connected on via Wifi, scan the network via nmap:
+```
+nmap -sn 192.168.178.1/24
+```
+If you're at home and only a few devices are connected just try sshing into them all. Best of luck if you're on a big network. You'll probably need to setup some static ip before connecting the PI.
+
+If everyting went well, the pi _should_ create a `usb0` interface on it's own side and you should see a `Ethernet connection` on the host side.
+
+To setup a static ip on the usb0 interface see [this](https://www.instructables.com/How-to-Set-a-Static-IP-on-Raspberry-Pi-The-Right-W/) guide. Or simply follow these instructions: 
+
+```bash
+sudo nmcli connection modify netplan-eth0 ipv4.addresses 10.42.0.10/24 ipv4.gateway 10.42.0.1 ipv4.dns 10.42.0.1 ipv4.method manual
+
+# to save the configs
+sudo nmcli connection down netplan-eth0
+sudo nmcli connection up netplan-eth0
+```
+
+The connection name `netplan-eth0` may be different for you. You can see this by listing the connections.
+
+This method supersedes other methods which use `/etc/network/interfaces.d` or editing /etc/dhcpcd.conf  
